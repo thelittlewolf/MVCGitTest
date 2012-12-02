@@ -73,7 +73,7 @@ end
 
 desc "Copy binaries to output."
 task :copyBinaries do
-  FileUtils.cp_r(FileList["#{@env_solutionfolderpath}/#{@env_projectname}/bin/#{@env_buildconfigname}/*.*"], "#{env_buildfolderpath}Binaries/")
+  FileUtils.cp_r(FileList["#{@env_solutionfolderpath}/#{@env_projectname}/bin/*.*"], "#{env_buildfolderpath}Binaries/")
 end
 
 desc "Run unit tests."
