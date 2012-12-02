@@ -37,8 +37,8 @@ task :buildIt => [:compileIt, :copyBinaries]
 #desc "Executes all tests."
 #task :testIt => [:runUnitTests]
 
-desc "Creates ZIP and NuGet packages."
-task :deployIt => [:createZipPackage, :createNuGetPackage]
+#desc "Creates ZIP and NuGet packages."
+#task :deployIt => [:createZipPackage, :createNuGetPackage]
 #--------------------------------------
 # Albacore tasks
 #--------------------------------------
